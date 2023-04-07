@@ -1,0 +1,17 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+
+  @apply text-gray-blueish;
+}
+
+body {
+  min-width: fit-content;
+}

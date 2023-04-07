@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /_nuxt/
+Allow: /
+Sitemap: https://formkit.appeel.io/sitemap.xml

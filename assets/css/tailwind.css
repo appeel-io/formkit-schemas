@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  .formkit-shadow {
+   @apply shadow-[0_10px_30px_0_rgba(27,160,252,0.2)];
+  }
+
+  .paragraph-basic {
+    @apply font-inter;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .paragraph-basic-semibold {
+    @apply font-inter;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .paragraph-small {
+    @apply font-inter;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  h1, .heading-1 {
+    @apply font-inter;
+
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+
+    @media (min-width: 768px) {
+      font-weight: 900;
+      font-size: 64px;
+      line-height: 72px;
+    }
+  }
+
+  h2, .heading-2 {
+    @apply font-inter;
+
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 48px;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  h3, .heading-3 {
+    @apply font-inter;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+
+    @media (min-width: 768px) {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+
+  h4 {
+    @apply font-inter;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (min-width: 768px) {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  h5 {
+    @apply font-inter;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  h6 {
+    @apply font-inter;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex justify-center w-auto px-6 items-center h-12 font-bold text-white bg-primary border border-transparent rounded-2xl;
+    @apply hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary
+  }
+
+  .btn-light {
+    @apply bg-slate-50 text-primary border border-transparent font-bold rounded-2xl;
+    @apply hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary
+  }
+
+  .btn-outline {
+    @apply bg-white border text-primary rounded-2xl font-bold border-slate-100;
+    @apply hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary
+  }
+
+  .btn-icon {
+    @apply p-0 h-12 w-12 inline-flex justify-center items-center font-bold
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: Inter;
+    font-weight: 900;
+    src: url(@/assets/fonts/Inter-Black.woff) format("woff");
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 600;
+    src: url(@/assets/fonts/Inter-SemiBold.woff) format("woff");
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 400;
+    src: url(@/assets/fonts/Inter-Regular.woff) format("woff");
+  }
+}
