@@ -5,7 +5,6 @@ This repository contains a collection of schema files that can be used with Form
 <br />
 
 ## How to use
-<br/>
 
 ### form example
 
