@@ -1,0 +1,10 @@
+{
+  "type": "passwordToggle",
+  "fileType": "ts",
+  "name": "Password toggle",
+  "description": "Toggle the visibility of the password input",
+  "requirements": [
+    "nuxt-icon"
+  ],
+  "author": "Jeremy Mees"
+}
