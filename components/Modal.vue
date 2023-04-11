@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 defineEmits(['close'])
 </script>
 
@@ -13,7 +13,7 @@ defineEmits(['close'])
           <Icon
             name="ic:baseline-clear"
             size="30"
-            class="text-pinkish-red"
+            class="text-red"
             @click="$emit('close')"
           />
         </button>

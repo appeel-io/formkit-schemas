@@ -1,9 +1,9 @@
-<script setup>
+<script setup lang="ts">
 import { useMediaQuery } from '@vueuse/core'
 
 const isSmall = useMediaQuery('(max-width: 768px)')
 
-const isOpen = ref(false)
+const isOpen: Ref<Boolean> = ref(false)
 
 // close mobile menu when the screen is resized to a bigger screen
 watch(isSmall, (v) => {
@@ -17,9 +17,9 @@ watch(isSmall, (v) => {
   <nav class="py-4 border-b">
     <div class="flex justify-between items-center gap-4 container">
       <NuxtLink to="/">
-        <h2>
+        <p class="heading-2">
           Forms
-        </h2>
+        </p>
       </NuxtLink>
 
       <ClientOnly>

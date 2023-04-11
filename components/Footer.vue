@@ -2,9 +2,9 @@
   <footer class="border-t">
     <div class="container my-6">
       <div class="flex flex-col md:flex-row items-start justify-between gap-x-20 gap-y-4">
-        <h2>
+        <p class="heading-2">
           Forms
-        </h2>
+        </p>
         <div class="grid md:grid-cols-2 md:mx-auto gap-y-6 gap-x-20">
           <div class="flex flex-col">
             <p class="font-bold mb-2 border-b">

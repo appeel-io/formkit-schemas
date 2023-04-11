@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 defineProps({
   url: { type: String, required: true },
   label: { type: String, required: true }
@@ -9,14 +9,8 @@ defineProps({
   <NuxtLink
     :to="url"
     class="hover:text-teal duration-200 ease-in-out max-w-max cursor-pointer"
-    active-class="active-link"
+    active-class="underline underline-offset-4"
   >
     {{ label }}
   </NuxtLink>
 </template>
-
-<style scoped>
-.active-link {
-  @apply text-teal underline;
-}
-</style>
