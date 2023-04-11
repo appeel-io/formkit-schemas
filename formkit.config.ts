@@ -21,8 +21,8 @@ export default {
           rounded
           overflow-hidden
           focus-within:ring-1
-          focus-within:ring-primary
-          focus-within:border-primary
+          focus-within:ring-teal
+          focus-within:border-teal
           formkit-invalid:ring-1
           formkit-invalid:ring-pinkish-red
           formkit-invalid:border-pinkish-red

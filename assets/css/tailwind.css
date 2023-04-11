@@ -4,7 +4,7 @@
 
 @layer utilities {
 
-  .formkit-shadow {
+  .forms-shadow {
    @apply shadow-[0_10px_30px_0_rgba(27,160,252,0.2)];
   }
 
@@ -108,22 +108,26 @@
 
 @layer components {
   .btn {
-    @apply inline-flex justify-center w-auto px-6 items-center h-12 font-bold text-white bg-primary border border-transparent rounded-2xl;
-    @apply hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary
+    @apply bg-forms inline-flex justify-center w-auto px-6 py-2 items-center font-bold border-2 text-gray border-gray rounded-full shadow-[4px_4px_0_0_#272B35] duration-300 ease-in-out;
+    @apply hover:bg-forms/80;
+    @apply focus:outline-none;
+    @apply active:shadow-[2px_2px_0_0_#272B35] active:translate-x-[2px] active:translate-y-[2px];
   }
 
-  .btn-light {
-    @apply bg-slate-50 text-primary border border-transparent font-bold rounded-2xl;
-    @apply hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary
+  .btn-yellow {
+    @apply btn bg-yellow hover:bg-yellow/80;
   }
 
-  .btn-outline {
-    @apply bg-white border text-primary rounded-2xl font-bold border-slate-100;
-    @apply hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary
+  .btn-teal {
+    @apply btn bg-teal hover:bg-teal/80;
   }
 
-  .btn-icon {
-    @apply p-0 h-12 w-12 inline-flex justify-center items-center font-bold
+  .btn-pink {
+    @apply btn bg-pink hover:bg-pink/80;
+  }
+
+  .btn-orange {
+    @apply btn bg-orange hover:bg-orange/80;
   }
 }
 

@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   ],
   modules: [
     'nuxt-simple-sitemap',
+    '@nuxt/image-edge',
     'nuxt-icon',
     '@vueuse/nuxt',
     '@nuxtjs/tailwindcss',

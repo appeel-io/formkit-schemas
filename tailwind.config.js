@@ -14,21 +14,13 @@ export const theme = {
   },
   extend: {
     colors: {
-      primary: {
-        transparent: 'rgb(27 160 252 / 0.035)',
-        DEFAULT: '#1BA0FC',
-        dark: '#214A88'
-      },
-      gray: {
-        lightest: '#D5D7DD',
-        light: '#959AA8',
-        mid: '#676B75',
-        darkest: '#272B35',
-        blueish: '#1C3861'
-      },
-      'pinkish-red': '#F77580',
-      green: '#09B3AF',
-      orange: '#DA7906'
+      gray: '#272B35',
+      forms: '#fdf7f1',
+      red: '#F77580',
+      yellow: '#fcd83cff',
+      teal: '#aae9ccff',
+      pink: '#ffbfe2ff',
+      orange: '#ff9935ff'
     },
     fontFamily: {
       inter: ['Inter', 'sans-serif']
