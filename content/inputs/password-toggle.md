@@ -1,5 +1,5 @@
 ```ts
-import { createPasswordTogglePlugin } from '@appeel/formkit' 
+import { createPasswordTogglePlugin } from 'appeel-formkit' 
 
 { 
   plugins: [ 
