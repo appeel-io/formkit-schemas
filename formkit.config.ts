@@ -1,15 +1,12 @@
 import { generateClasses } from '@formkit/themes'
 import { createAutoAnimatePlugin } from '@formkit/addons'
-
-import passwordToggle from '~/public/schemas/inputs/passwordToggle/input'
+import { createPasswordTogglePlugin } from 'appeel-formkit'
 
 export default {
   plugins: [
-    createAutoAnimatePlugin()
+    createAutoAnimatePlugin(),
+    createPasswordTogglePlugin()
   ],
-  inputs: {
-    passwordToggle
-  },
   config: {
     classes: generateClasses({
       global: {
@@ -20,13 +17,14 @@ export default {
         message: 'text-red text-xs',
         actions: 'mt-4',
         inner: `
-        bg-white py-1 px-2 rounded-full overflow-hidden border-2 shadow-right
+        bg-white py-1 px-2 rounded-full overflow-hidden border-2 shadow-right flex
         focus-within:shadow-right-clicked
         focus-within:border-teal
         formkit-invalid:border-red
         formkit-errors:border-red
         `,
-        input: 'w-full focus:outline-none border-none px-4 py-2'
+        input: 'w-full focus:outline-none border-none px-4 py-2',
+        suffixIcon: 'my-auto'
       },
       form: {
         messages: 'list-none mt-4 mb-0 px-3 py-2 border-red border bg-red/10 rounded-md',

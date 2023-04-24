@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col items-center justify-center min-h-screen">
-    <div class="flex flex-col items-center space-y-10">
+  <NuxtLayout>
+    <div class="flex flex-col items-center space-y-10 my-20">
       <h1>
         Something went wrong
       </h1>
@@ -9,5 +9,5 @@
         Home
       </NuxtLink>
     </div>
-  </div>
+  </NuxtLayout>
 </template>

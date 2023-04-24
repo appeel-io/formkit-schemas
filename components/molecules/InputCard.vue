@@ -1,5 +1,7 @@
 <script setup lang="ts">
 defineProps({ input: { type: Object, required: true } })
+
+const showCode = ref(false)
 </script>
 
 <template>
@@ -18,7 +20,7 @@ defineProps({ input: { type: Object, required: true } })
     <p v-if="input.description" class="pt-4">
       {{ input.description }}
     </p>
-    <template v-if="input.requirements">
+    <template v-if="input.requirements?.length">
       <div class="pt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
         <p class="text-xs">
           Requirements:
@@ -33,16 +35,16 @@ defineProps({ input: { type: Object, required: true } })
         </template>
       </div>
     </template>
-    <div class="flex justify-end pt-6">
-      <a
-        :href="`/schemas/inputs/{{ input.type }}/input.{{ input.fileType }}`"
-        download
-        target="_blank"
-      >
-        <button class="btn-teal">
-          Download
-        </button>
-      </a>
+    <template v-if="showCode">
+      <CodeBlock :name="input.mdFileName" />
+      <div class="pt-2">
+        You can now use FormKit type="{{ input.type }}"
+      </div>
+    </template>
+    <div class="flex justify-end pt-2">
+      <button class="btn-teal" @click="showCode = !showCode">
+        {{ showCode ? 'Show less' : 'Show code' }}
+      </button>
     </div>
   </div>
 </template>

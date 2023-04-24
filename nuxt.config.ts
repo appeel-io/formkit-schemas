@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@/assets/css/global.css'
   ],
   modules: [
+    '@nuxt/content',
     'nuxt-simple-sitemap',
     '@nuxt/image-edge',
     'nuxt-icon',
@@ -27,5 +28,17 @@ export default defineNuxtConfig({
   },
   sitemap: {
     hostname: 'https://formkit.appeel.io'
+  },
+  content: {
+    highlight: {
+      theme: 'github-light'
+    }
+  },
+  vite: {
+    server: {
+      fs: {
+        strict: false
+      }
+    }
   }
 })
