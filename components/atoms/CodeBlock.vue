@@ -16,6 +16,6 @@ const { data, pending } = await useAsyncData(`code-${props.type}-${props.name}`,
   <ContentRenderer
     v-else-if="data"
     :value="data"
-    class="overflow-x-auto max-w-full bg-white p-4 rounded-2xl border-2 text-xs"
+    class="overflow-x-auto max-w-full bg-white p-4 rounded-2xl border-2 text-xs shadow-right"
   />
 </template>
