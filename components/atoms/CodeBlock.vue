@@ -1,24 +1,21 @@
 <script setup lang="ts">
 const props = defineProps({
   name: { type: String, required: true },
-  file: { type: String, default: 'formkit.config.ts' }
+  type: { type: String, default: 'inputs' }
 })
 
-const { data } = await useAsyncData('code', () => queryContent()
-  .where({ _path: `/inputs/${props.name}` })
-  .findOne()
+const { data, pending } = await useAsyncData(`code-${props.type}-${props.name}`,
+  () => queryContent()
+    .where({ _path: `/${props.type}/${props.name}` })
+    .findOne()
 )
 </script>
 
 <template>
-  <div class="mt-4">
-    <p>
-      ~ {{ file }}
-    </p>
-    <ContentRenderer
-      v-if="data"
-      :value="data"
-      class="overflow-x-auto bg-white p-4 rounded-2xl border-2"
-    />
-  </div>
+  <Loader v-if="pending" />
+  <ContentRenderer
+    v-else-if="data"
+    :value="data"
+    class="overflow-x-auto bg-white p-4 rounded-2xl border-2 text-xs"
+  />
 </template>

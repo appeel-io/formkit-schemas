@@ -16,6 +16,7 @@
       <button class="btn-orange">
         test
       </button>
+      <Loader />
     </div>
   </NuxtLayout>
 </template>

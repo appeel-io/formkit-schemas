@@ -19,7 +19,6 @@
     "nuxt": "^3.3.2"
   },
   "dependencies": {
-    "@appeel/formkit": "file:../formkit",
     "@formkit/addons": "^0.16.4",
     "@formkit/nuxt": "^0.16.1",
     "@nuxtjs/tailwindcss": "^6.6.5",
