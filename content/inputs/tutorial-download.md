@@ -1,5 +1,5 @@
 ```bash
-npm install appeel-formkit
+npm install appeel-formkit --save
 or
 yarn add appeel-formkit
 ```

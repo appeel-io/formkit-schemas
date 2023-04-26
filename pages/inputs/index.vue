@@ -7,7 +7,7 @@ import passwordToggle from '@/src/inputs/passwordToggle.json'
     <div class="grid xl:grid-cols-2 gap-6 pb-6">
       <div>
         <p class="heading-3 mb-6">
-          How to use them
+          How to use custom inputs
         </p>
         <p class="max-w-prose">
           To get started, you should install the <span class="font-bold">appeel-formkit</span> package.
