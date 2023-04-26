@@ -30,12 +30,15 @@ const form = ref({
 ```typescript
 // formkit config file
 
-import passwordToggle from 'path to input'
+import { createPasswordTogglePlugin } from 'appeel-formkit'
 
 // in your formkit config add the following
-inputs: {
-    passwordToggle
-  }
+{ 
+  plugins: [ 
+    ..., 
+    createPasswordTogglePlugin() 
+  ]
+}
 ```
 
 ```html
